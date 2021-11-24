@@ -1,0 +1,20 @@
+import numpy as np
+import math
+
+x=float(input("Enter the sensor value:"))
+r=abs((x*(x-1))/2)
+h = (r)*0.1592
+e= math.exp((-x/2)**2)
+a=e+3.14
+if a > 5.4488982849458294e+265:
+  print("Pump Predicted status=0")
+elif a<5.4488982849458294e+265:
+  print("Pump predicted status=1")
+else :
+  print("error")  
+
+# print(e)
+
+
+ 
+
